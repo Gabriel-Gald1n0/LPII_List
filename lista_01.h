@@ -1,7 +1,5 @@
 #ifndef LISTA_01_H
 #define LISTA_01_H
-
-#endif // LISTA_01_H
 #include <math.h>
 #include <string.h>
 int N;
@@ -15,7 +13,6 @@ int desenhaLinha(int tamanho, char linha);
 int desenhaTriangulo2(int tamanho, int tipo);
 int desenhaLinhaR(int tamanho, char linha[], int indice);
 int desenhaLinha2(int tamanho, char linha[], int indice);
-
 
 double valorMedio(double x[]);
 double desvioPadraoG(double x[ ]);
@@ -31,3 +28,5 @@ void escreveCon(char *c);
 int palindromo(char *c,int n, int i);
 int maiorNumero(int arr[], int n);
 int repeteC(char *c);
+
+#endif // LISTA_01_H
