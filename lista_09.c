@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
+#include "lista_01.h"
 #define MAX_SIZE 100
-int N;
-
-double valorMedio(double x[]);
-double desvioPadraoG(double x[ ]);
 
 int main()
 {
@@ -35,6 +31,7 @@ double desvioPadraoG(double x[ ])
     double desvio = sqrt(soma/N);
     return desvio;
 }
+
 double valorMedio(double x[])
 {
     double soma = 0.0;
@@ -43,5 +40,7 @@ double valorMedio(double x[])
 
     return soma/N;
 }
+
+
 
 

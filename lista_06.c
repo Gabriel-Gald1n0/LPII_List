@@ -1,25 +1,21 @@
 #include <stdio.h>
-char linha;
-int desenhaLinha(int tamanho, char linha);
-int desenhaTriangulo(int tamanho, int tipo);
+#include "lista_01.h"
 
 int main()
 {
     int tamanho=0, tipo;
 
-
     printf("Digite o Tamanho do triangulo(1 e 20):");
     scanf("%d", &tamanho);
-
 
     printf("Tipo (1) (2) (3) (4):");
     scanf("%d", &tipo);
 
-    desenhaTriangulo(tamanho,tipo);
+    desenhaTriangulo2(tamanho,tipo);
     return 0;
 }
 
-int desenhaTriangulo(int tamanho, int tipo)
+int desenhaTriangulo2(int tamanho, int tipo)
 {
     if(tamanho < 0 || tamanho > 20)
             return 1;

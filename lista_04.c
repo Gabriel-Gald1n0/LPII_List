@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int desenhaTabuleiro(int tamanho);
+#include "lista_01.h"
 
 int main()
 {
@@ -12,7 +11,6 @@ int main()
     desenhaTabuleiro(tamanho);
     return 0;
 }
-
 
 int desenhaTabuleiro(int tamanho)
 {
@@ -26,9 +24,9 @@ int desenhaTabuleiro(int tamanho)
 
                 // Alterna entre '*' e ' ' para desenhar o padrão de xadrez
                 if ((i / 5 + j / 5) % 2 == 0)
-                    printf("* ");// se for par desenha '*'
+                    printf("  ");// se for par desenha ' '
                 else
-                    printf("  "); // se for impar ' '
+                    printf("* "); // se for impar '*'
 
                 }
 

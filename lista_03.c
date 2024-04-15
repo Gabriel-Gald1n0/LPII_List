@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int desenhaPiramide(int tamanho, int tipo);
+#include "lista_01.h"
 
 int main()
 {
@@ -38,15 +37,15 @@ int desenhaPiramide(int tamanho, int tipo)
                 }
                 break;
             default:
-                for(int i = tamanho; i > 1 ; i--)
+                for(int i = tamanho; i > 0 ; i--)
                 {
                     for(int j = tamanho - i; j > 0; j--)
                         printf(" ");
 
-                    for(int j = i; j > 1; j--)
+                    for(int j = i; j > 0; j--)
                         printf("*");
 
-                    for(int j = i; j > 1; j--)
+                    for(int j = i; j > 0; j--)
                         printf("*");
                     printf("\n");
                 }

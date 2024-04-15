@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "lista_01.h"
 #define MAX_SIZE 100
-int N;
-
-double valorMedio(double x[]);
-void normaliza(double x_inout[ ]);
 
 int main()
 {
@@ -39,6 +36,8 @@ double valorMedio(double x[])
 
     return soma/N;
 }
+
+
 
 
 

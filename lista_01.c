@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int desenhaQuadrado(int tamanho, int vazado);
+#include "lista_01.h"
 
 int main()
 {
@@ -19,36 +18,18 @@ int main()
     return 0;
 }
 
-
 int desenhaQuadrado(int tamanho, int vazado)
 {
     if(tamanho < 0 || tamanho > 20)
             return 1;
-    else{
-        if(!vazado)
-        {
-        for(int i = 0; i < tamanho; i++)
-        {
-            for(int j = 0; j < tamanho; j++)
-            {
-                printf("* ");
-            }
-            printf("\n");
-        }
-            return 1;
-        }else{
+
         for(int i = 0; i < tamanho; i++){
             for(int j = 0; j < tamanho; j++){
             // Verifica se estamos na primeira ou ultima linha, ou na primeira ou ultima coluna
-                if(i == 0 || i == tamanho - 1 || j == 0 || j == tamanho - 1)
-                    printf("* ");
-                else
-                    printf("  "); // espaco em branco
+                putchar((!vazado || i == 0 || i == tamanho - 1 || j == 0 || j == tamanho - 1) ? '*':' ');
             }
-            printf("\n");
+            putchar('\n');
         }
-        return 1;
-      }
-    }
+
     return 0;
 }

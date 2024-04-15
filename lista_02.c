@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int desenhaTriangulo(int tamanho, int tipo);
+#include "lista_01.h"
 
 int main()
 {
@@ -30,36 +29,36 @@ int desenhaTriangulo(int tamanho, int tipo)
                 for(int i = 0; i < tamanho; i++)
                 {
                     for(int j = 0; j <= i; j++)
-                        printf("*");
-                    printf("\n");
+                        putchar('*');
+                    putchar('\n');
                 }
                 break;
             case 2:
-                for(int i = tamanho; i > 1 ; i--)
+                for(int i = tamanho; i > 0; i--)
                 {
-                    for(int j = i; j > 1; j--)
-                        printf("*");
-                    printf("\n");
+                    for(int j = i; j > 0; j--)
+                        putchar('*');
+                    putchar('\n');
                 }
                 break;
             case 3:
-                for(int i = tamanho; i > 1 ; i--)
+                for(int i = tamanho; i > 0 ; i--)
                 {
                     for(int j = tamanho - i; j > 0; j--)
-                        printf(" ");
-                    for(int j = i; j > 1; j--)
-                        printf("*");
-                    printf("\n");
+                        putchar(' ');
+                    for(int j = i; j > 0; j--)
+                        putchar('*');
+                    putchar('\n');
                 }
                 break;
             case 4:
                 for(int i = 0; i < tamanho; i++)
                 {
                     for(int j = 0; j < tamanho - i; j++)
-                        printf(" ");
+                        putchar(' ');
                     for(int j = 0; j <= i; j++)
-                        printf("*");
-                    printf("\n");
+                        putchar('*');
+                    putchar('\n');
                 }
                 break;
             default:

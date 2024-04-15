@@ -1,8 +1,5 @@
-
 #include <stdio.h>
-
-int desenhaLinha(int tamanho, char linha[], int indice);
-int desenhaLinhaR(int tamanho, char linha[], int indice);
+#include "lista_01.h"
 
 int main()
 {
@@ -12,7 +9,7 @@ int main()
     printf("Digite o Tamanho da linha(1 a 20):");
     scanf("%d", &tamanho);
 
-    desenhaLinha(tamanho, linha,0);
+    desenhaLinha2(tamanho, linha,0);
     return 0;
 }
 
@@ -22,13 +19,14 @@ int desenhaLinhaR(int tamanho, char linha[],int indice)
     {
         linha[tamanho] = '\0';
         printf("%s", linha);
+        return 0;
     }
 
     linha[indice] = '*';
     return desenhaLinhaR(tamanho, linha, indice+1);
 }
 
-int desenhaLinha(int tamanho, char linha[], int indice)
+int desenhaLinha2(int tamanho, char linha[], int indice)
 {
     if(tamanho < 1 || tamanho > 20)
             return 1;
