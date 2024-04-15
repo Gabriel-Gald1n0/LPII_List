@@ -1,21 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "lista_01.h"
-#define MAX_SIZE 20
 
 int main()
 {
-    double valores[MAX_SIZE];
-    int N;
-    srand(time(NULL));
-    N = rand() % MAX_SIZE;
-
-    for(int i = 0; i < N; i++)
-        valores[i] = rand() % MAX_SIZE;
+    int N = 4;
+    double valores[4]= {7,7,7,7};
 
     double media = valorMedioArr(valores, N);
-    printf("Media = %.2lf\n",media);
+    printf("Media = %.2f\n",media);
     return 0;
 }
 
