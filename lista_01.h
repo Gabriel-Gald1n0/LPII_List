@@ -10,9 +10,7 @@ int desenhaPiramide(int tamanho, int tipo);
 int desenhaTabuleiro(int tamanho);
 
 int desenhaLinha(int tamanho, char linha);
-int desenhaTriangulo2(int tamanho, int tipo);
-int desenhaLinhaR(int tamanho, char linha[], int indice);
-int desenhaLinha2(int tamanho, char linha[], int indice);
+int desenhaLinhaR(int tamanho, char linha[]);
 
 double valorMedio(double x[]);
 double desvioPadraoG(double x[ ]);
